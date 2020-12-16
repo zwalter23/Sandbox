@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question</title>
+    </head>
+
+    <body>
+        <h1>Display question</h1>
+        <p>-Create the /question/<question_id> page that displays a question and the answers for it.</p>
+        <p>-The page is available under /question/<question_id></p>
+        <p>-There are links to the question pages from the list page</p>
+        <p>-The page displays the question title and message</p>
+        <p>-The page displays all the answers to a question</p>
+        <div>
+            {% print(f"['{question_id}','{submission_time}','{view_number}','{vote_number}','{title}','{message}'") %}
+        </div>
+        <form action="/question" method="POST">
+            <button type="submit">Add answer</button>
+        <form action="/list" method="POST">
+            <button type="submit">Go back</button>
+    </body>
+</html
+
+
+
+
+
+
+

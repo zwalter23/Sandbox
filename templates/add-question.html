@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Add Question</title>
+    </head>
+
+    <body>
+        <p>-Implement a form that allows you to add a question.</p>
+        <p>-There is an /add-question page with a form</p>
+        <p>-The page is linked from the list page</p>
+        <p>-There is a POST form with at least title and message fields</p>
+        <p>-After submitting, you are redirected to "Display a question" page of this new question</p>
+
+
+        <h1>Add question</h1>
+        <form action="/question/<question_id>" method="POST">
+            <div>
+                <p>Title</p>
+                <textarea name="question_title" rows="2" cols="70"></textarea>
+            </div>
+            <div>
+                <p>Question</p>
+                <textarea name="question" rows="10" cols="70"></textarea>
+            </div>
+            <input type="submit" value="Submit question">
+            <input type="button" value="Go back" onclick="window.history.back()">
+        </form>
+    </body>
+</html
+
+
+
+
+
+
+

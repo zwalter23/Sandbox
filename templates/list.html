@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>List</title>
+    </head>
+
+    <body>
+        <h1>Listed Questions</h1>
+        <p><a href="/question">-Implement a page that displays all questions</a></p>
+        <p><a href="/question">-Load and display the data from question.csv</a></p>
+        <p><a href="/question">-Sort the questions by the latest added on top</a></p>
+
+        <h1>Questions</h1>
+        <div>
+            {{ fields }}
+        </div>
+        <div>
+            {% for lines in questions %}
+                {% print(lines) %}
+        </div>
+            {% endfor %}
+        <form action="/add-question" method="POST">
+            <button type="submit">Add new question</button>
+        </form>
+    </body>
+</html>
