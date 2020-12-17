@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Question</title>
+    </head>
+
+    <body>
+        <h1> {% print(question_title) %}</h1>
+        <p> {% print(question) %} </p>
+        <form action="/question/{{question_id}}" method="POST">
+            <div>
+                <textarea name="answer" rows="8" cols="70"></textarea>
+            </div>
+            <div>
+                <button type="submit">Add answer</button>
+            </div>
+        </form>
+        <form action="/list">
+            <button type="submit">Go back</button>
+        </form>
+    </body>
+</html
+
+
+
+
+
+
+

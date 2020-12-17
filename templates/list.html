@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>List</title>
+    </head>
+
+    <body>
+        <h1>Questions</h1>
+        <div align=center>
+            <h2>{{ fields }}</h2>
+        </div>
+        <div>
+            {% for lines in questions %}
+                {% print(lines) %}
+        </div>
+            {% endfor %}
+        <form action="/add-question" method="POST">
+            <button type="submit">Add new question</button>
+        </form>
+    </body>
+</html>
